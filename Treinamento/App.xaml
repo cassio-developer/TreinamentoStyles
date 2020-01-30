@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="Treinamento.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:dictionary="clr-namespace:Treinamento.Resources.Dictionaries"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <dictionary:ContantsStylesValues />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Color x:Key="BackgroundColor">Black</Color>
+
+            <Color x:Key="PrimaryColor">White</Color>
+            <Color x:Key="SecondaryColor">LightGray</Color>
+            <Color x:Key="TertiaryColor">Gray</Color>
+            <Color x:Key="AssistiveColor">DarkGray</Color>
+
+            <Color x:Key="SuccessColor">Green</Color>
+            <Color x:Key="InformativeColor">Blue</Color>
+            <Color x:Key="WarningColor">Yellow</Color>
+            <Color x:Key="ErrorColor">Red</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

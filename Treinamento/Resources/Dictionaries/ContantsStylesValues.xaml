@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="Treinamento.Resources.Dictionaries.ContantsStylesValues"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--#region FRAMERADIUS-->
+    <OnPlatform
+        x:Key="RadiusNone"
+        x:TypeArguments="x:Single"
+        Default="0" />
+    <OnPlatform
+        x:Key="RadiusSmall"
+        x:TypeArguments="x:Single"
+        Default="8" />
+    <OnPlatform
+        x:Key="RadiusMedium"
+        x:TypeArguments="x:Single"
+        Default="16" />
+    <OnPlatform
+        x:Key="RadiusLarge"
+        x:TypeArguments="x:Single"
+        Default="32" />
+    <!--#endregion-->
+
+    <!--#region BUTTONRADIUS-->
+    <OnPlatform
+        x:Key="CornerRadiusNone"
+        x:TypeArguments="x:Int32"
+        Default="0" />
+    <OnPlatform
+        x:Key="CornerRadiusSmall"
+        x:TypeArguments="x:Int32"
+        Default="8" />
+    <OnPlatform
+        x:Key="CornerRadiusMedium"
+        x:TypeArguments="x:Int32"
+        Default="16" />
+    <OnPlatform
+        x:Key="CornerRadiusLarge"
+        x:TypeArguments="x:Int32"
+        Default="32" />
+    <!--#endregion-->
+
+    <!--#region SPACINGS-->
+    <OnPlatform
+        x:Key="SpacingNone"
+        x:TypeArguments="x:Double"
+        Default="0" />
+    <OnPlatform
+        x:Key="SpacingExtraSmall"
+        x:TypeArguments="x:Double"
+        Default="2" />
+    <OnPlatform
+        x:Key="SpacingVerySmall"
+        x:TypeArguments="x:Double"
+        Default="4" />
+    <OnPlatform
+        x:Key="SpacingSmall"
+        x:TypeArguments="x:Double"
+        Default="8" />
+    <OnPlatform
+        x:Key="SpacingMedium"
+        x:TypeArguments="x:Double"
+        Default="12" />
+    <OnPlatform
+        x:Key="SpacingLarge"
+        x:TypeArguments="x:Double"
+        Default="16" />
+    <OnPlatform
+        x:Key="SpacingVeryLarge"
+        x:TypeArguments="x:Double"
+        Default="24" />
+    <OnPlatform
+        x:Key="SpacingExtraLarge"
+        x:TypeArguments="x:Double"
+        Default="28" />
+    <OnPlatform
+        x:Key="SpacingGiant"
+        x:TypeArguments="x:Double"
+        Default="32" />
+    <OnPlatform
+        x:Key="SpacingVeryGiant"
+        x:TypeArguments="x:Double"
+        Default="36" />
+    <OnPlatform
+        x:Key="SpacingExtraGiant"
+        x:TypeArguments="x:Double"
+        Default="40" />
+    <!--#endregion-->
+
+    <!--#region SPACINGS THICKNESS-->
+    <OnPlatform
+        x:Key="ThicknessNone"
+        x:TypeArguments="Thickness"
+        Default="0,0,0,0" />
+    <OnPlatform
+        x:Key="ThicknessExtraSmall"
+        x:TypeArguments="Thickness"
+        Default="2,2,2,2" />
+    <OnPlatform
+        x:Key="ThicknessVerySmall"
+        x:TypeArguments="Thickness"
+        Default="4,4,4,4" />
+    <OnPlatform
+        x:Key="ThicknessSmall"
+        x:TypeArguments="Thickness"
+        Default="8,8,8,8" />
+    <OnPlatform
+        x:Key="ThicknessMedium"
+        x:TypeArguments="Thickness"
+        Default="12,12,12,12" />
+    <OnPlatform
+        x:Key="ThicknessLarge"
+        x:TypeArguments="Thickness"
+        Default="16,16,16,16" />
+    <OnPlatform
+        x:Key="ThicknessVeryLarge"
+        x:TypeArguments="Thickness"
+        Default="24,24,24,24" />
+    <OnPlatform
+        x:Key="ThicknessExtraLarge"
+        x:TypeArguments="Thickness"
+        Default="28,28,28,28" />
+    <OnPlatform
+        x:Key="ThicknessGiant"
+        x:TypeArguments="Thickness"
+        Default="32,32,32,32" />
+    <OnPlatform
+        x:Key="ThicknessVeryGiant"
+        x:TypeArguments="Thickness"
+        Default="36,36,36,36" />
+    <OnPlatform
+        x:Key="ThicknessExtraGiant"
+        x:TypeArguments="Thickness"
+        Default="40,40,40,40" />
+    <!--#endregion-->
+
+</ResourceDictionary>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Treinamento.Views.Templates.MainTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:dictionary="clr-namespace:Treinamento.Resources.Dictionaries"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="template"
+    BackgroundColor="{StaticResource BackgroundColor}"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <dictionary:BoxViewStyles />
+                <dictionary:EntryStyles />
+                <dictionary:FlexLayoutStyles />
+                <dictionary:FrameStyles />
+                <dictionary:ImageStyles />
+                <dictionary:LabelStyles />
+                <dictionary:StackLayoutStyles />
+                <dictionary:ButtonStyles />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout
+                Margin="{StaticResource ThicknessNone}"
+                Padding="{StaticResource ThicknessNone}"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Spacing="{StaticResource SpacingNone}">
+                <ContentView x:Name="headerContent" VerticalOptions="Start">
+                    <StackLayout Padding="{StaticResource ThicknessVerySmall}" Spacing="{StaticResource SpacingSmall}">
+                        <Label StyleClass="Title,VCenter,HCenter" Text="{Binding Source={Reference template}, Path=Title}" />
+                        <BoxView StyleClass="HLine" />
+                    </StackLayout>
+                </ContentView>
+                <ContentView
+                    x:Name="bodyContent"
+                    Padding="{StaticResource ThicknessSmall}"
+                    VerticalOptions="FillAndExpand" />
+                <ContentView x:Name="footerContent" VerticalOptions="End">
+                    <StackLayout Padding="{StaticResource ThicknessExtraSmall}" Spacing="{StaticResource SpacingExtraSmall}">
+                        <BoxView StyleClass="HLine" />
+                        <Label StyleClass="Subtitle,VCenter,HCenter" Text="{Binding Source={Reference template}, Path=Copyright}" />
+                    </StackLayout>
+                </ContentView>
+            </StackLayout>
+
+            <FlexLayout
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="{StaticResource BackgroundColor}"
+                IsVisible="{Binding Source={x:Reference template}, Path=IsBusy}"
+                JustifyContent="Center"
+                Opacity="0.9">
+                <ActivityIndicator IsRunning="{Binding Source={x:Reference template}, Path=IsBusy}" Color="{StaticResource PrimaryColor}" />
+            </FlexLayout>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

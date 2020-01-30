@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="Treinamento.Resources.Dictionaries.FlexLayoutStyles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Style Class="ShowCase" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="SpaceEvenly" />
+        <Setter Property="Wrap" Value="Wrap" />
+    </Style>
+
+    <Style Class="TopLeft" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="Start" />
+    </Style>
+
+    <Style Class="TopRight" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="End" />
+    </Style>
+
+    <Style Class="TopCenter" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="SpaceAround" />
+    </Style>
+
+    <Style Class="Center" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="SpaceEvenly" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+    </Style>
+
+    <Style Class="BottomCenter" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="SpaceAround" />
+        <Setter Property="VerticalOptions" Value="EndAndExpand" />
+    </Style>
+
+    <Style Class="BottomLeft" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="Start" />
+        <Setter Property="VerticalOptions" Value="EndAndExpand" />
+    </Style>
+
+    <Style Class="BottomRight" TargetType="FlexLayout">
+        <Setter Property="JustifyContent" Value="End" />
+        <Setter Property="VerticalOptions" Value="EndAndExpand" />
+    </Style>
+
+</ResourceDictionary>

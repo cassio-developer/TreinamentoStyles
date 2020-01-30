@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="Treinamento.Resources.Dictionaries.ButtonStyles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="{StaticResource BackgroundColor}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="CornerRadius" Value="{StaticResource CornerRadiusMedium}" />
+    </Style>
+
+    <Style Class="Rounded" TargetType="Button">
+        <Setter Property="CornerRadius" Value="{StaticResource CornerRadiusMedium}" />
+    </Style>
+
+    <Style Class="HalfRounded" TargetType="Button">
+        <Setter Property="CornerRadius" Value="{StaticResource CornerRadiusSmall}" />
+    </Style>
+
+    <Style Class="VeryRounded" TargetType="Button">
+        <Setter Property="CornerRadius" Value="{StaticResource CornerRadiusLarge}" />
+    </Style>
+
+</ResourceDictionary>

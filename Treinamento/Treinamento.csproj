@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Dictionaries\BoxViewStyles.xaml.cs">
+      <DependentUpon>BoxViewStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\ImageStyles.xaml.cs">
+      <DependentUpon>ImageStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\FlexlayoutStyles.xaml.cs">
+      <DependentUpon>FlexLayoutStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\EntryStyles.xaml.cs">
+      <DependentUpon>EntryStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\FrameStyles.xaml.cs">
+      <DependentUpon>FrameStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\StacklayoutStyles.xaml.cs">
+      <DependentUpon>StackLayoutStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\LabelStyles.xaml.cs">
+      <DependentUpon>LabelStyles.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Dictionaries\ButtonStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\ContantsStylesValues.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\LabelStyles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AnotherView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\OtherView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\MainTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

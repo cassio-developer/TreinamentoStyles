@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="Treinamento.Resources.Dictionaries.LabelStyles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+    <Style Class="HCenter" TargetType="Label">
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style Class="Title" TargetType="Label">
+        <Setter Property="FontSize" Value="Title" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <Style Class="Subtitle" TargetType="Label">
+        <Setter Property="FontSize" Value="Subtitle" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <Style Class="VCenter" TargetType="Label">
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style Class="InverseColor" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource BackgroundColor}" />
+    </Style>
+
+</ResourceDictionary>

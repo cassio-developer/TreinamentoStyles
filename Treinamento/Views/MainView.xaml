@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<template:MainTemplate
+    x:Class="Treinamento.Views.MainView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:template="clr-namespace:Treinamento.Views.Templates"
+    Title="Página Principal"
+    Copyright="@cassio-developer 2020"
+    mc:Ignorable="d">
+
+    <template:MainTemplate.Body>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nisi tincidunt, euismod quam ullamcorper, laoreet enim. Suspendisse vestibulum ac quam vel rutrum. Curabitur vitae nibh quis sapien mollis dapibus sit amet et lorem. Sed rhoncus vehicula vestibulum. Suspendisse consectetur purus in sem rutrum fringilla. Sed molestie ultricies eros, at accumsan nunc ornare et. Curabitur egestas, erat nec dictum condimentum, dolor ex imperdiet justo, eu tincidunt odio quam vitae urna. Sed lobortis mi in diam tempor, a vestibulum justo tempus. Vivamus eu nulla augue. Duis ut ante justo." />
+                <BoxView StyleClass="HLine" />
+                <Frame StyleClass="HalfRounded">
+                    <StackLayout>
+                        <Label StyleClass="InverseColor" Text="Título Centralizado" />
+                        <Label StyleClass="VCenter,HCenter,InverseColor,Subtitle" Text="Subtítulo Centralizado" />
+                        <Label StyleClass="VCenter,HCenter,InverseColor" Text="Texto comum Centralizado" />
+                    </StackLayout>
+                </Frame>
+                <BoxView StyleClass="VLine" />
+                <Frame StyleClass="VeryRounded">
+                    <StackLayout>
+                        <Label StyleClass="VCenter,HCenter,InverseColor,Title" Text="Título Centralizado" />
+                        <Label StyleClass="VCenter,HCenter,InverseColor,Subtitle" Text="Subtítulo Centralizado" />
+                        <Label StyleClass="VCenter,HCenter,InverseColor" Text="Texto comum Centralizado" />
+                    </StackLayout>
+                </Frame>
+                <BoxView StyleClass="HLine" />
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <Button Command="{Binding NextPageCommand}" Text="Próxima Página" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </template:MainTemplate.Body>
+
+</template:MainTemplate>

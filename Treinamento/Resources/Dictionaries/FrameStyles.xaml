@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    x:Class="Treinamento.Resources.Dictionaries.FrameStyles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Style TargetType="Frame">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+    <Style Class="LetterShow" TargetType="Frame">
+        <Setter Property="WidthRequest" Value="35" />
+        <Setter Property="HeightRequest" Value="70" />
+        <Setter Property="Margin" Value="16,0,16,0" />
+    </Style>
+
+    <Style Class="Rounded" TargetType="Frame">
+        <Setter Property="CornerRadius" Value="{StaticResource RadiusMedium}" />
+    </Style>
+
+    <Style Class="HalfRounded" TargetType="Frame">
+        <Setter Property="CornerRadius" Value="{StaticResource RadiusSmall}" />
+    </Style>
+
+    <Style Class="VeryRounded" TargetType="Frame">
+        <Setter Property="CornerRadius" Value="{StaticResource RadiusLarge}" />
+    </Style>
+
+</ResourceDictionary>
