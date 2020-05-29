@@ -1,27 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <templates:MainTemplate
-    x:Class="Treinamento.Views.OtherView"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:templates="clr-namespace:Treinamento.Views.Templates"
-    Title="Outra página"
-    Copyright="@cassio-developer 2020"
-    mc:Ignorable="d">
-    <templates:MainTemplate.Header>
-        <BoxView StyleClass="HLine" />
-    </templates:MainTemplate.Header>
-    <templates:MainTemplate.Body>
-        <ScrollView>
-            <StackLayout>
-                <FlexLayout StyleClass="Center">
-                    <Label StyleClass="VCenter,HCenter,Title" Text="Texto Qualquer" />
-                </FlexLayout>
-            </StackLayout>
-        </ScrollView>
-    </templates:MainTemplate.Body>
-    <templates:MainTemplate.Footer>
-        <Button Command="{Binding PreviosPageCommand}" Text="Voltar" />
-    </templates:MainTemplate.Footer>
+	x:Class="Treinamento.Views.OtherView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:templates="clr-namespace:Treinamento.Views.Templates"
+	Title="Página com substituição do footer padrão"
+	Copyright="@cassio-developer 2020"
+	mc:Ignorable="d">
+	<templates:MainTemplate.Body>
+		<ScrollView>
+			<StackLayout>
+				<FlexLayout StyleClass="Center">
+					<Label StyleClass="VCenter,HCenter,Title" Text="Texto Qualquer" />
+				</FlexLayout>
+			</StackLayout>
+		</ScrollView>
+	</templates:MainTemplate.Body>
+	<templates:MainTemplate.Footer>
+		<Button Command="{Binding PreviosPageCommand}" Text="Voltar" />
+	</templates:MainTemplate.Footer>
 </templates:MainTemplate>

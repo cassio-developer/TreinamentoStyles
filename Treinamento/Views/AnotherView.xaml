@@ -1,36 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <template:MainTemplate
-    x:Class="Treinamento.Views.AnotherView"
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:template="clr-namespace:Treinamento.Views.Templates"
-    x:Name="this"
-    Title="Página Secundária"
-    Copyright="@cassio-developer 2020"
-    mc:Ignorable="d">
-    <template:MainTemplate.Footer />
-    <template:MainTemplate.Body>
-        <ScrollView>
-            <StackLayout>
-                <FlexLayout BindableLayout.ItemsSource="{Binding Alphabet}" StyleClass="ShowCase">
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <Frame StyleClass="VeryRounded, LetterShow">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Source={x:Reference this}, Path=BindingContext.RemoveLetterCommand}" CommandParameter="{Binding}" />
-                                </Frame.GestureRecognizers>
-                                <Label StyleClass="VCenter,HCenter,InverseColor,Title" Text="{Binding}" />
-                            </Frame>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
-                </FlexLayout>
-                <StackLayout VerticalOptions="EndAndExpand">
-                    <Button Command="{Binding PreviosPageCommand}" Text="Voltar" />
-                    <Button Command="{Binding NextPageCommand}" Text="Próxima Página" />
-                </StackLayout>
-            </StackLayout>
-        </ScrollView>
-    </template:MainTemplate.Body>
+	x:Class="Treinamento.Views.AnotherView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:template="clr-namespace:Treinamento.Views.Templates"
+	x:Name="this"
+	Title="Página Secundária"
+	Copyright="@cassio-developer 2020"
+	mc:Ignorable="d">
+	<template:MainTemplate.Header>
+		<StackLayout>
+			<Label StyleClass="VCenter,HCenter,Title" Text="Página Secundária" />
+			<Label StyleClass="VCenter,HCenter" Text="Com Sobreposição do cabeçalho padrão" />
+			<BoxView StyleClass="HLine" />
+		</StackLayout>
+	</template:MainTemplate.Header>
+	<template:MainTemplate.Body>
+		<ScrollView>
+			<StackLayout>
+				<FlexLayout BindableLayout.ItemsSource="{Binding Alphabet}" StyleClass="ShowCase">
+					<BindableLayout.ItemTemplate>
+						<DataTemplate>
+							<Frame StyleClass="VeryRounded, LetterShow">
+								<Frame.GestureRecognizers>
+									<TapGestureRecognizer Command="{Binding Source={x:Reference this}, Path=BindingContext.RemoveLetterCommand}" CommandParameter="{Binding}" />
+								</Frame.GestureRecognizers>
+								<Label StyleClass="VCenter,HCenter,InverseColor,Title" Text="{Binding}" />
+							</Frame>
+						</DataTemplate>
+					</BindableLayout.ItemTemplate>
+				</FlexLayout>
+				<Grid VerticalOptions="EndAndExpand">
+					<Button Command="{Binding PreviosPageCommand}" Text="Voltar" />
+					<Button
+						Grid.Column="1"
+						Command="{Binding NextPageCommand}"
+						Text="Próxima Página" />
+				</Grid>
+			</StackLayout>
+		</ScrollView>
+	</template:MainTemplate.Body>
 </template:MainTemplate>
